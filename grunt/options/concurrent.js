@@ -18,6 +18,15 @@ module.exports = {
         tasks: [
             'watch:livereload',
             'watch:postcss',
+            'browserify:appBabelify',
+            'connect'
+        ]
+    },
+
+    devBabelifyReact: {
+        tasks: [
+            'watch:livereload',
+            'watch:postcss',
             'browserify:appBabelifyReact',
             'connect'
         ]
