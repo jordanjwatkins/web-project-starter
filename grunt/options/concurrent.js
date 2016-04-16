@@ -18,7 +18,7 @@ module.exports = {
         tasks: [
             'watch:livereload',
             'watch:postcss',
-            'browserify:appBabelify',
+            'browserify:appBabelifyReact',
             'connect'
         ]
     },

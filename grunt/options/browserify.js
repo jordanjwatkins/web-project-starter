@@ -2,7 +2,7 @@
 
 var appSrc = './src/js/index.js',
     appDest = 'build/index.js',
-    testSrc = './test/*Spec.js',
+    testSrc = './tests/**/*.js',
     testDest = 'build/test_bundle.js';
 
 module.exports = {
@@ -24,6 +24,14 @@ module.exports = {
         dest: appDest,
         options: {
             transform: ['babelify']
+        }
+    },
+
+    appBabelifyReact: {
+        src: appSrc,
+        dest: appDest,
+        options: {
+            transform: [['babelify', {presets: ['react', 'es2015']}]]
         }
     },
 

@@ -12,4 +12,9 @@ module.exports = function (grunt) {
         'postcss',
         'concurrent:devBabelify'
     ]);
+
+    grunt.registerTask('devBabelifyReact', [
+        'postcss',
+        'concurrent:devBabelifyReact'
+    ]);
 };
